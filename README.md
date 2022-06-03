@@ -1,44 +1,86 @@
-# WhatsApp Bot
+<div align=center>
 
-> A simple and easy-to-use WhatsApp bot project, written in TypeScript.
+<img src="https://i.ibb.co/sWmwD0k/e0bslrup.jpg" width="500" height="500"/>
 
-<img src="https://badgen.net/badge/icon/typescript?icon=typescript&label">
-<a href="https://github.com/Clytage/rawon/actions?query=workflow%3A%22Lint+code+and+compile+setup+script%22"><img src="https://github.com/Clytage/rawon/workflows/Lint%20code%20and%20compile%20setup%20script/badge.svg" alt="CI Status" /></a>
+### myBitBot </div>
 
-## Features
-- Easy to use.
-- Basic avatar (profile picture), and sticker command.
-- A production-ready project, set up the bot without coding.
+# myBitBot - Nodejs - Heroku - Baileys
 
-## General Setup
-1. Download and install [Node.js](https://nodejs.org) version `16.6.0` or higher (make sure you have installed the build tools too)
-2. Open `.env_example` file and rename it to `.env`
-3. Install required and optional dependencies
-```sh
-$ npm install
-```
-4. Compile the file
-```sh
-$ npm run build
-```
-5. If you want to save your disk spaces, let's prune the dev dependencies
-```sh
-$ npm prune --production
-```
-6. Finally, you can start the bot
-```sh
-$ npm start
-```
+Whatsapp bot written in nodejs with group management and many features.
 
-## Hosting Setup
+#
 
-We haven't tested this project on free hosting providers yet.
+**Needs**
 
-## Project Contributors
+- Heroku account
+- Two devices as need to scan the qr code
+- Heroku CLI
 
-### Developers
-- [@mzrtamp](https://github.com/mzrtamp)
-- [@noxzym](https://github.com/noxzym)
-- [@Tiramitzu](https://github.com/Tiramitzu)
+# Instructions:-
 
-> © 2022 Clytage Development
+**Deploy on Heroku**
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jacktheboss220/myBitBot-Updated)
+
+## Heroku CLI
+
+1. After downloading and installing Heroku CLI in your system login to heroku cli using `heroku login` in command prompt or powershell.
+2. Now after login use `heroku logs -a <your-app-name> --tail` to get real time logs from heroku app.
+3. In real time logs it will automatically ask you for login using qr code just simple scan the qr code using your whatsapp web section, and you are done.
+4. Scan QR code with you phone. done!
+
+#
+
+# Features:-
+
+## Default prefix : `-`
+
+## Commands :
+
+|        Commands         |         Alias          |                 Description                  |
+| :---------------------: | :--------------------: | :------------------------------------------: |
+|         `-bit`          |        `-list`         |        Open whole pannel of commands         |
+|         `-help`         |        `-menu`         |             Display help message             |
+|        `-admin`         |           -            |              get admin commands              |
+|         `-add`          |           -            |             Add member to group              |
+|         `-kick`         |    `-ban, -remove`     |           Remove member from group           |
+|       `-promote`        |           -            |          Make member admin in group          |
+|        `-demote`        |           -            |      Remove member from admin in group       |
+|        `-rename`        |           -            |             Change group subject             |
+|    `-chat <on/off>`     |           -            |          Enable/disable group chat           |
+|         `-link`         | `-getlink, -grouplink` |           Get invite link of group           |
+|   `-joke Categories`    |                        |      Get a random joke or by Categories      |
+|       `-sticker`        |           -            | Create a sticker from different media types  |
+|      `-removebot`       |           -            |            Remove bot from group             |
+|        `-source`        |           -            |              Get the bot source              |
+|  `-yt <YOutube Link>`   |         `-ytv`         |           Download youtube videos            |
+|  `-yta <YOutube Link>`  |           -            |           Download youtube audios            |
+|  `-idp <InstaHandle>`   |           -            | Download Insta profile picture of your crush |
+| `-insta <InstapostUrl>` |          `-i`          |             Download Insta media             |
+|   `-song <song name>`   |           -            |         Download song by just name!          |
+|        `-delete`        |      `-d`,`-del`       |            Delete the bot message            |
+|         `-warn`         |           -            |                Warn the user                 |
+|        `-block`         |           -            |        block the user form using bot         |
+
+**Run On Local Machine**
+
+- Create a `.env` file for enviromental variables in local directory with following values without quote
+
+      PORT=8000
+      DATABASE_URL = 'Get from heroku dashboard'
+      DEEPAI_KEY = 'Get from deepai.org'
+      REMOVE_BG_KEY = 'Get from remove.bg'
+      INSTA_API_KEY = 'Get from below'
+      myNumber = 'Get logs on this number'
+
+* Get value of database_url from Heroku dashboard > settings > reveal config vars
+
+**Get insta**
+
+[![insta](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@JackJK/insta-session)
+
+# Package Used
+
+## [Bailey](https://github.com/adiwajshing/Baileys)
+
+## [Node js](https://github.com/nodejs/node)
